@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - Lucia Programming Language</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" type="image/png" href="../assets/logo_text.png">
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <img src="../assets/logo_notext.png" alt="Lucia Logo" class="w-8 h-8">
+                    </div>
+                    <h1 class="text-2xl font-bold text-purple-900">Lucia</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+                </nav>
+                <button class="md:hidden text-purple-900" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="text-center mt-12">
+            <h1 class="text-5xl font-bold text-purple-900 mb-6">Oops! Forbidden Access</h1>
+            <p class="text-xl text-gray-700 mb-8">Sorry, you do not have permission to view this page.</p>
+            <a href="about.html" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 mb-8">Go to About Page</a>
+        </div>
+    </main>
+
+    <footer class="bg-purple-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Lucia</h3>
+                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease of use.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
+                        <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a></li>
+                        <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
+                        <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Community</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/SirPigari/lucia" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://reddit.com/u/SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.youtube.com/@SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-purple-800 mt-8 pt-6 text-center text-purple-300">
+                <p>&copy; 2025 Lucia Programming Language. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

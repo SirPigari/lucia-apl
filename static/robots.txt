@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /api/
+Disallow: /license/download
+Disallow: /assets/
+Disallow: /favicon
+Disallow: /403
+Disallow: /404
+Disallow: /429
+Disallow: /500
+Disallow: /*.html$
+Allow: /
+
+Sitemap: /sitemap.xml
