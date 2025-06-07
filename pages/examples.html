@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="icon" type="image/png" href="../assets/logo_text.png">
 </head>
+
 <body class="bg-gray-50">
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-6">
@@ -24,10 +26,14 @@
                     <h1 class="text-2xl font-bold text-purple-900">Lucia</h1>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
-                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600" href="examples.html">Examples</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="about.html">About</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="documentation.html">Documentation</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="download.html">Download</a>
+                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600"
+                        href="examples.html">Examples</a>
                 </nav>
                 <button class="md:hidden text-purple-900" id="mobile-menu-btn">
                     <i class="fas fa-bars text-2xl"></i>
@@ -37,10 +43,14 @@
 
         <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
-                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded" href="examples.html">Examples</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="about.html">About</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="documentation.html">Documentation</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="download.html">Download</a>
+                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded"
+                    href="examples.html">Examples</a>
             </div>
         </div>
     </header>
@@ -49,10 +59,12 @@
         <div id="examples" class="tab-content active">
             <section class="mb-12">
                 <h2 class="text-2xl font-bold text-purple-900 mb-6">Lucia Code Examples</h2>
-                <p class="text-gray-700 mb-8">Explore these examples to see Lucia in action. Click on any example to view the code.</p>
+                <p class="text-gray-700 mb-8">Explore these examples to see Lucia in action. Click on any example to
+                    view the code.</p>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('bubble-sort')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('bubble-sort')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">Bubble Sort</h3>
                         <p class="text-gray-600 mb-4">Implementation of the bubble sort algorithm in Lucia.</p>
                         <div class="flex justify-between items-center">
@@ -63,7 +75,8 @@
                         </div>
                     </div>
 
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('factorial-iterative')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('factorial-iterative')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">Factorial (Iterative)</h3>
                         <p class="text-gray-600 mb-4">Calculate factorial using an iterative approach.</p>
                         <div class="flex justify-between items-center">
@@ -74,7 +87,8 @@
                         </div>
                     </div>
 
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('factorial-recursive')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('factorial-recursive')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">Factorial (Recursive)</h3>
                         <p class="text-gray-600 mb-4">Calculate factorial using recursion.</p>
                         <div class="flex justify-between items-center">
@@ -85,7 +99,8 @@
                         </div>
                     </div>
 
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('fibonacci')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('fibonacci')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">Fibonacci Sequence</h3>
                         <p class="text-gray-600 mb-4">Calculate Fibonacci numbers using Binet's formula.</p>
                         <div class="flex justify-between items-center">
@@ -96,7 +111,8 @@
                         </div>
                     </div>
 
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('fizzbuzz')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('fizzbuzz')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">FizzBuzz</h3>
                         <p class="text-gray-600 mb-4">Classic FizzBuzz problem solution.</p>
                         <div class="flex justify-between items-center">
@@ -107,7 +123,8 @@
                         </div>
                     </div>
 
-                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer" onclick="showExample('prime-checker')">
+                    <div class="example-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+                        onclick="showExample('prime-checker')">
                         <h3 class="text-xl font-semibold text-purple-800 mb-3">Prime Number Checker</h3>
                         <p class="text-gray-600 mb-4">Check if a number is prime.</p>
                         <div class="flex justify-between items-center">
@@ -120,7 +137,8 @@
                 </div>
 
                 <!-- Example Viewer Modal -->
-                <div id="example-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+                <div id="example-modal"
+                    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
                     <div class="bg-white rounded-xl shadow-lg w-full max-w-4xl max-h-[90vh] overflow-hidden">
                         <div class="bg-purple-800 px-4 py-3 flex justify-between items-center">
                             <h3 id="example-title" class="text-lg font-semibold text-white"></h3>
@@ -132,7 +150,8 @@
                             <pre id="example-code" class="p-4"></pre>
                         </div>
                         <div class="px-4 py-3 bg-gray-50 flex justify-end">
-                            <button onclick="hideExample()" class="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg">Close</button>
+                            <button onclick="hideExample()"
+                                class="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg">Close</button>
                         </div>
                     </div>
                 </div>
@@ -145,23 +164,46 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lucia</h3>
-                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease of use.</p>
+                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease
+                        of use.</p>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
-                        <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a></li>
-                        <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
-                        <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
-                    </ul>
+                <div class="flex space-x-12 md:space-x-24">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
+                            <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a>
+                            </li>
+                            <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
+                            <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 invisible">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about-rust.html" class="text-purple-200 hover:text-white">About Rust</a></li>
+                            <li><a href="license.html" class="text-purple-200 hover:text-white">License</a></li>
+                            <li><a target="_blank" ,
+                                    href="https://github.com/SirPigari/lucia/blob/main/env/Docs/versioning.md"
+                                    class="text-purple-200 hover:text-white">Versioning</a></li>
+                            <li><a href="https://github.com/SirPigari/lucia-rust" target="_blank"
+                                    class="text-purple-200 hover:text-white">Rust
+                                    Repo</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div>
                     <h3 class="text-xl font-bold mb-4">Community</h3>
                     <div class="flex space-x-4">
-                        <a href="https://github.com/SirPigari/lucia" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
-                        <a href="https://reddit.com/u/SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
-                        <a href="https://www.youtube.com/@SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/SirPigari/lucia" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://reddit.com/u/SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.youtube.com/@SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -173,4 +215,5 @@
 
     <script src="../static/script.js"></script>
 </body>
+
 </html>
