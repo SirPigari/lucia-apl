@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="icon" type="image/png" href="../assets/logo_text.png">
 </head>
+
 <body class="bg-gray-50">
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-6">
@@ -24,10 +26,14 @@
                     <h1 class="text-2xl font-bold text-purple-900">Lucia</h1>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600" href="documentation.html">Documentation</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="about.html">About</a>
+                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600"
+                        href="documentation.html">Documentation</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="download.html">Download</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="examples.html">Examples</a>
                 </nav>
                 <button class="md:hidden text-purple-900" id="mobile-menu-btn">
                     <i class="fas fa-bars text-2xl"></i>
@@ -37,10 +43,14 @@
 
         <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded" href="documentation.html">Documentation</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="download.html">Download</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="about.html">About</a>
+                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded"
+                    href="documentation.html">Documentation</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="download.html">Download</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="examples.html">Examples</a>
             </div>
         </div>
     </header>
@@ -52,50 +62,68 @@
                 <div id="sidebar" class="md:w-1/4 bg-white p-4 rounded-xl shadow-sm h-fit sticky top-4">
                     <h3 class="text-lg font-semibold text-purple-900 mb-4">Table of Contents</h3>
                     <div class="space-y-1">
-                        <a href="#getting-started" class="block sidebar-link active px-3 py-2 text-gray-700 rounded">Getting Started</a>
-                        <a href="#variables-data-types" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Variables & Data Types</a>
+                        <a href="#getting-started"
+                            class="block sidebar-link active px-3 py-2 text-gray-700 rounded">Getting Started</a>
+                        <a href="#variables-data-types"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Variables & Data Types</a>
                         <a href="#operators" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Operators</a>
                         <a href="#blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Blocks in Lucia</a>
-                        <a href="#indentation" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Indentation</a>
-                        <a href="#control-flow" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Control Flow</a>
+                        <a href="#indentation"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Indentation</a>
+                        <a href="#control-flow" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Control
+                            Flow</a>
                         <a href="#functions" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Functions</a>
                         <a href="#loops" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Loops</a>
-                        <a href="#error-handling" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Error Handling</a>
+                        <a href="#error-handling" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Error
+                            Handling</a>
                         <a href="#comments" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Comments</a>
-                        <a href="#input-output" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Input/Output</a>
-                        <a href="#other-statements" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Other Statements</a>
+                        <a href="#input-output"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Input/Output</a>
+                        <a href="#other-statements" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Other
+                            Statements</a>
                         <a href="#objects" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Objects</a>
                         <a href="#predefs" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Predefs</a>
-                        <a href="#code-blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Code Blocks</a>
+                        <a href="#code-blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Code
+                            Blocks</a>
                         <a href="#conclusion" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Conclusion</a>
                     </div>
                 </div>
 
                 <!-- Mobile Sidebar -->
-                <div id="mobile-sidebar" class="fixed top-0 left-0 h-full w-64 bg-white p-4 shadow-lg z-40 transform -translate-x-full transition-transform duration-300 md:hidden">
-                       <button id="sidebar-close-btn" class="md:hidden mb-4 text-gray-500 hover:text-gray-700 sticky top-1">
-                            <i class="fas fa-times"></i> Close
-                        </button>
+                <div id="mobile-sidebar"
+                    class="fixed top-0 left-0 h-full w-64 bg-white p-4 shadow-lg z-40 transform -translate-x-full transition-transform duration-300 md:hidden">
+                    <button id="sidebar-close-btn"
+                        class="md:hidden mb-4 text-gray-500 hover:text-gray-700 sticky top-1">
+                        <i class="fas fa-times"></i> Close
+                    </button>
 
-                        <h3 class="text-lg font-semibold text-purple-900 mb-4">Table of Contents</h3>
-                        <div class="space-y-1">
-                            <a href="#getting-started" class="block sidebar-link active px-3 py-2 text-gray-700 rounded">Getting Started</a>
-                            <a href="#variables-data-types" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Variables & Data Types</a>
-                            <a href="#operators" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Operators</a>
-                            <a href="#blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Blocks in Lucia</a>
-                            <a href="#indentation" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Indentation</a>
-                            <a href="#control-flow" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Control Flow</a>
-                            <a href="#functions" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Functions</a>
-                            <a href="#loops" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Loops</a>
-                            <a href="#error-handling" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Error Handling</a>
-                            <a href="#comments" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Comments</a>
-                            <a href="#input-output" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Input/Output</a>
-                            <a href="#other-statements" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Other Statements</a>
-                            <a href="#objects" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Objects</a>
-                            <a href="#predefs" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Predefs</a>
-                            <a href="#code-blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Code Blocks</a>
-                            <a href="#conclusion" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Conclusion</a>
-                        </div>
+                    <h3 class="text-lg font-semibold text-purple-900 mb-4">Table of Contents</h3>
+                    <div class="space-y-1">
+                        <a href="#getting-started"
+                            class="block sidebar-link active px-3 py-2 text-gray-700 rounded">Getting Started</a>
+                        <a href="#variables-data-types"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Variables & Data Types</a>
+                        <a href="#operators" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Operators</a>
+                        <a href="#blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Blocks in Lucia</a>
+                        <a href="#indentation"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Indentation</a>
+                        <a href="#control-flow" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Control
+                            Flow</a>
+                        <a href="#functions" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Functions</a>
+                        <a href="#loops" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Loops</a>
+                        <a href="#error-handling" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Error
+                            Handling</a>
+                        <a href="#comments" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Comments</a>
+                        <a href="#input-output"
+                            class="block sidebar-link px-3 py-2 text-gray-700 rounded">Input/Output</a>
+                        <a href="#other-statements" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Other
+                            Statements</a>
+                        <a href="#objects" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Objects</a>
+                        <a href="#predefs" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Predefs</a>
+                        <a href="#code-blocks" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Code
+                            Blocks</a>
+                        <a href="#conclusion" class="block sidebar-link px-3 py-2 text-gray-700 rounded">Conclusion</a>
+                    </div>
                 </div>
 
                 <!-- Content -->
@@ -105,15 +133,21 @@
                         <p class="text-gray-700 mb-4">To write your first program in Lucia, follow the steps below:</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">1. Install Lucia</h3>
-                        <p class="text-gray-700 mb-4">First, you need to install the Lucia language. Follow the installation guide to set it up on your system.</p>
-                        <p class="text-gray-700 mb-4">You can also customize your Lucia preferences by modifying the config.json file. For details on how to configure the file, refer to the Guide to config.json.</p>
+                        <p class="text-gray-700 mb-4">First, you need to install the Lucia language. Follow the
+                            installation guide to set it up on your system.</p>
+                        <p class="text-gray-700 mb-4">You can also customize your Lucia preferences by modifying the
+                            config.json file. For details on how to configure the file, refer to the Guide to
+                            config.json.</p>
 
-                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">2. Create a "Hello, World!" Program</h3>
-                        <p class="text-gray-700 mb-4">Create a new file named <code>hello.lucia</code> and write the following code:</p>
+                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">2. Create a "Hello, World!" Program
+                        </h3>
+                        <p class="text-gray-700 mb-4">Create a new file named <code>hello.lucia</code> and write the
+                            following code:</p>
                         <pre class="mb-4"><code>print("Hello, World!")</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">3. Run the Program</h3>
-                        <p class="text-gray-700 mb-4">Once the program is saved, you can run it by executing the following command in your terminal:</p>
+                        <p class="text-gray-700 mb-4">Once the program is saved, you can run it by executing the
+                            following command in your terminal:</p>
                         <pre class="mb-4"><code>lucia hello.lucia</code></pre>
                         <p class="text-gray-700">Output:</p>
                         <pre><code>Hello, World!</code></pre>
@@ -121,7 +155,9 @@
 
                     <section id="variables-data-types" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Variables & Data Types</h2>
-                        <p class="text-gray-700 mb-4">In Lucia, variables are declared using a type annotation followed by the <code>=</code> assignment operator. Here's how you define variables and assign values:</p>
+                        <p class="text-gray-700 mb-4">In Lucia, variables are declared using a type annotation followed
+                            by the <code>=</code> assignment operator. Here's how you define variables and assign
+                            values:</p>
                         <pre class="mb-4"><code>x: int = 10                                 // Integer
 name: str = "Lucia"                         // String
 pi: float = 3.14                            // Float
@@ -135,16 +171,23 @@ person: map = {"name": "Lucia", "age": 20}  // Map</code></pre>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
                             <li><strong>int</strong>: Whole numbers (e.g., 10, -5).</li>
                             <li><strong>str</strong>: Text values (e.g., "Hello, World!").</li>
-                            <li><strong>bool</strong>: Logical values (<code>true</code>, <code>false</code> or <code>null</code>).</li>
+                            <li><strong>bool</strong>: Logical values (<code>true</code>, <code>false</code> or
+                                <code>null</code>).
+                            </li>
                             <li><strong>void</strong>: Represents the absence of a value (<code>null</code>).</li>
-                            <li><strong>float</strong>: Decimal numbers (e.g., 3.14, -0.001). The default precision for floating-point numbers is 28 decimal places.</li>
-                            <li><strong>any</strong>: A type that can hold any value (e.g., can be a string, number, list, etc.).</li>
+                            <li><strong>float</strong>: Decimal numbers (e.g., 3.14, -0.001). The default precision for
+                                floating-point numbers is 28 decimal places.</li>
+                            <li><strong>any</strong>: A type that can hold any value (e.g., can be a string, number,
+                                list, etc.).</li>
                             <li><strong>list</strong>: Ordered collection of values (e.g., <code>[1, 2, 3]</code>).</li>
-                            <li><strong>map</strong>: Key-value pairs (e.g., <code>{"name": "Lucia", "age": 25}</code>).</li>
+                            <li><strong>map</strong>: Key-value pairs (e.g., <code>{"name": "Lucia", "age": 25}</code>).
+                            </li>
                         </ul>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">F-Strings</h3>
-                        <p class="text-gray-700 mb-4">Lucia supports f-strings for string interpolation, allowing you to embed variables or expressions directly within strings using curly braces <code>{}</code>.</p>
+                        <p class="text-gray-700 mb-4">Lucia supports f-strings for string interpolation, allowing you to
+                            embed variables or expressions directly within strings using curly braces <code>{}</code>.
+                        </p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">Basic Usage</h4>
                         <pre class="mb-4"><code>name: str = "Lucia"
@@ -162,10 +205,13 @@ print(result) // Output: The sum of 5 and 10 is 15.</code></pre>
 
                     <section id="operators" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Operators</h2>
-                        <p class="text-gray-700 mb-4">Lucia supports a variety of operators that can be used for arithmetic, comparison, logical operations, and more. Below are the categories of supported operators:</p>
+                        <p class="text-gray-700 mb-4">Lucia supports a variety of operators that can be used for
+                            arithmetic, comparison, logical operations, and more. Below are the categories of supported
+                            operators:</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Arithmetic Operators</h3>
-                        <p class="text-gray-700 mb-4">Lucia supports the basic arithmetic operators for mathematical calculations:</p>
+                        <p class="text-gray-700 mb-4">Lucia supports the basic arithmetic operators for mathematical
+                            calculations:</p>
                         <pre class="mb-4"><code>x: int = 10 + 5             // 15
 product: int = 4 * 2        // 8
 division: float = 10 / 2    // 5
@@ -188,7 +234,8 @@ isEitherTrue: bool = (true || false)    // true
 isMember: bool = (3 ~ [1, 2, 3])        // true</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Assignment Operators</h3>
-                        <p class="text-gray-700 mb-4">Lucia also supports shorthand assignment operators for modifying variable values:</p>
+                        <p class="text-gray-700 mb-4">Lucia also supports shorthand assignment operators for modifying
+                            variable values:</p>
                         <pre><code>x: int = 10  // x = 10
 x += 5       // x = 15
 x -= 3       // x = 12
@@ -196,7 +243,8 @@ x *= 2       // x = 24
 x /= 4       // x = 6</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Supported Operators</h3>
-                        <p class="text-gray-700 mb-4">In addition to the standard arithmetic, comparison, and logical operators, Lucia includes several other operators:</p>
+                        <p class="text-gray-700 mb-4">In addition to the standard arithmetic, comparison, and logical
+                            operators, Lucia includes several other operators:</p>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
                             <li><strong>+</strong>: Addition</li>
                             <li><strong>-</strong>: Subtraction</li>
@@ -206,9 +254,11 @@ x /= 4       // x = 6</code></pre>
                             <li><strong>%</strong>: Modulo (remainder of division)</li>
                             <li><strong>==</strong>: Equality comparison</li>
                             <li><strong>></strong>: Greater than</li>
-                            <li><strong><</strong>: Less than</li>
+                            <li><strong>
+                                    << /strong>: Less than</li>
                             <li><strong>>=</strong>: Greater than or equal to</li>
-                            <li><strong><=</strong>: Less than or equal to</li>
+                            <li><strong>
+                                    <=< /strong>: Less than or equal to</li>
                             <li><strong>!=</strong>: Not equal to</li>
                             <li><strong>&&</strong>: Logical AND</li>
                             <li><strong>||</strong>: Logical OR</li>
@@ -224,27 +274,41 @@ x /= 4       // x = 6</code></pre>
 
                     <section id="blocks" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Blocks in Lucia</h2>
-                        <p class="text-gray-700 mb-4">In Lucia, blocks of code are used to group statements together. This can be seen in control structures like <code>if</code> statements, loops, functions, and more. Lucia uses the <code>end</code> keyword to mark the end of a block, which is similar to using braces in C or indentation in Python.</p>
+                        <p class="text-gray-700 mb-4">In Lucia, blocks of code are used to group statements together.
+                            This can be seen in control structures like <code>if</code> statements, loops, functions,
+                            and more. Lucia uses the <code>end</code> keyword to mark the end of a block, which is
+                            similar to using braces in C or indentation in Python.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Block Syntax</h3>
-                        <p class="text-gray-700 mb-4">Blocks in Lucia start with a statement that is followed by a <code>:</code>, and the body of the block is indented (optional, but recommended for readability). The block is terminated using the <code>end</code> keyword.</p>
+                        <p class="text-gray-700 mb-4">Blocks in Lucia start with a statement that is followed by a
+                            <code>:</code>, and the body of the block is indented (optional, but recommended for
+                            readability). The block is terminated using the <code>end</code> keyword.
+                        </p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Example of a Block</h3>
-                        <p class="text-gray-700 mb-4">Here's an example of a block used with an <code>if</code> statement:</p>
+                        <p class="text-gray-700 mb-4">Here's an example of a block used with an <code>if</code>
+                            statement:</p>
                         <pre class="mb-4"><code>age: int = 18
 
 if (age >= 18):
     print("You are an adult.")
 end</code></pre>
-                        <p class="text-gray-700">The code within the block (in this case, the <code>print()</code> function) is indented, and the block is terminated with <code>end</code>.</p>
+                        <p class="text-gray-700">The code within the block (in this case, the <code>print()</code>
+                            function) is indented, and the block is terminated with <code>end</code>.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Why Use Blocks?</h3>
-                        <p class="text-gray-700 mb-4">Blocks help organize code into logical groups. By using the <code>end</code> keyword, Lucia ensures that the boundaries of each block are clearly defined, which reduces errors and improves readability.</p>
+                        <p class="text-gray-700 mb-4">Blocks help organize code into logical groups. By using the
+                            <code>end</code> keyword, Lucia ensures that the boundaries of each block are clearly
+                            defined, which reduces errors and improves readability.
+                        </p>
                     </section>
 
                     <section id="indentation" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Indentation</h2>
-                        <p class="text-gray-700 mb-4">Unlike Python, Lucia does not rely on indentation to define blocks. Blocks are explicitly marked using the <code>:</code> after a statement and are terminated with the <code>end</code> keyword. While indentation is not required, it is recommended for better readability.</p>
+                        <p class="text-gray-700 mb-4">Unlike Python, Lucia does not rely on indentation to define
+                            blocks. Blocks are explicitly marked using the <code>:</code> after a statement and are
+                            terminated with the <code>end</code> keyword. While indentation is not required, it is
+                            recommended for better readability.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Example</h3>
                         <p class="text-gray-700 mb-4">Both of the following examples are valid in Lucia:</p>
@@ -260,14 +324,20 @@ if (age >= 18):
 print("You are an adult.")
 end</code></pre>
 
-                        <p class="text-gray-700 mb-4">Since blocks in Lucia are clearly defined by <code>:</code> and <code>end</code>, indentation does not affect how the code runs. However, using consistent indentation is recommended to improve readability.</p>
+                        <p class="text-gray-700 mb-4">Since blocks in Lucia are clearly defined by <code>:</code> and
+                            <code>end</code>, indentation does not affect how the code runs. However, using consistent
+                            indentation is recommended to improve readability.
+                        </p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Summary</h3>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
-                            <li>A block in Lucia is created by using a statement followed by a colon (<code>:</code>) and indented code.</li>
+                            <li>A block in Lucia is created by using a statement followed by a colon (<code>:</code>)
+                                and indented code.</li>
                             <li>Blocks are terminated with the <code>end</code> keyword.</li>
-                            <li>Indentation is important in Lucia, and the code inside a block must be consistently indented.</li>
-                            <li>Blocks improve code organization and readability, ensuring that related code is grouped together.</li>
+                            <li>Indentation is important in Lucia, and the code inside a block must be consistently
+                                indented.</li>
+                            <li>Blocks improve code organization and readability, ensuring that related code is grouped
+                                together.</li>
                         </ul>
                     </section>
 
@@ -275,10 +345,13 @@ end</code></pre>
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Control Flow</h2>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">If Statements</h3>
-                        <p class="text-gray-700 mb-4">Control the flow of your program using <code>if</code> statements. An <code>if</code> statement evaluates a condition and executes the code block based on whether the condition is true or false.</p>
+                        <p class="text-gray-700 mb-4">Control the flow of your program using <code>if</code> statements.
+                            An <code>if</code> statement evaluates a condition and executes the code block based on
+                            whether the condition is true or false.</p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">Basic Example</h4>
-                        <p class="text-gray-700 mb-4">Here's an example of how an <code>if</code> statement works in Lucia:</p>
+                        <p class="text-gray-700 mb-4">Here's an example of how an <code>if</code> statement works in
+                            Lucia:</p>
                         <pre class="mb-4"><code>age: int = 18
 
 if (age >= 18):
@@ -294,36 +367,49 @@ end</code></pre>
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">Example Breakdown</h4>
                         <p class="text-gray-700 mb-4">In the above example:</p>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
-                            <li>The condition <code>if (age >= 18):</code> checks if the <code>age</code> variable is greater than or equal to 18.</li>
-                            <li>If the condition is true, the block under the <code>if</code> statement is executed, printing "You are an adult."</li>
-                            <li>If the condition <code>age == 69</code> is true, it prints "Nice!". If not, the <code>else</code> block is executed, printing "You are not 69."</li>
+                            <li>The condition <code>if (age >= 18):</code> checks if the <code>age</code> variable is
+                                greater than or equal to 18.</li>
+                            <li>If the condition is true, the block under the <code>if</code> statement is executed,
+                                printing "You are an adult."</li>
+                            <li>If the condition <code>age == 69</code> is true, it prints "Nice!". If not, the
+                                <code>else</code> block is executed, printing "You are not 69."
+                            </li>
                         </ul>
                     </section>
 
                     <section id="functions" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Functions</h2>
-                        <p class="text-gray-700 mb-4">In Lucia, functions are defined using the <code>fun</code> keyword, but if any modifiers are used, the <code>fun</code> keyword is not required.</p>
+                        <p class="text-gray-700 mb-4">In Lucia, functions are defined using the <code>fun</code>
+                            keyword, but if any modifiers are used, the <code>fun</code> keyword is not required.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Basic Function Declaration</h3>
-                        <p class="text-gray-700 mb-4">A function can be defined with parameters and an optional return type:</p>
+                        <p class="text-gray-700 mb-4">A function can be defined with parameters and an optional return
+                            type:</p>
                         <pre class="mb-4"><code>fun add(a: int, b: int) -> int:
     return a + b
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Modifiers</h3>
-                        <p class="text-gray-700 mb-4">Functions can have different modifiers that change their behavior:</p>
+                        <p class="text-gray-700 mb-4">Functions can have different modifiers that change their behavior:
+                        </p>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
                             <li><code>public</code> – The function is accessible from other modules (default).</li>
                             <li><code>private</code> – The function is only accessible within the same module.</li>
-                            <li><code>static</code> – The function belongs to the class itself rather than an instance.</li>
-                            <li><code>non-static</code> – The function belongs to an instance of the class (default behavior).</li>
+                            <li><code>static</code> – The function belongs to the class itself rather than an instance.
+                            </li>
+                            <li><code>non-static</code> – The function belongs to an instance of the class (default
+                                behavior).</li>
                             <li><code>final</code> – The function cannot be redefined later.</li>
-                            <li><code>mutable</code> – Explicitly states that the function can be redefined (default behavior).</li>
+                            <li><code>mutable</code> – Explicitly states that the function can be redefined (default
+                                behavior).</li>
                         </ul>
-                        <p class="text-gray-700 mb-4">By default, every function is <code>public non-static mutable</code>.</p>
+                        <p class="text-gray-700 mb-4">By default, every function is
+                            <code>public non-static mutable</code>.
+                        </p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Using Modifiers</h3>
-                        <p class="text-gray-700 mb-4">When using modifiers, the <code>fun</code> keyword is not required:</p>
+                        <p class="text-gray-700 mb-4">When using modifiers, the <code>fun</code> keyword is not
+                            required:</p>
                         <pre class="mb-4"><code>public non-static final main() -> int:
     return 0
 end</code></pre>
@@ -333,23 +419,28 @@ end</code></pre>
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Empty Functions</h3>
-                        <p class="text-gray-700 mb-4">If a function has no body, the colon <code>:</code> is not required:</p>
+                        <p class="text-gray-700 mb-4">If a function has no body, the colon <code>:</code> is not
+                            required:</p>
                         <pre class="mb-4"><code>fun main() -> void end</code></pre>
-                        <p class="text-gray-700 mb-4">However, if the function has a body, the colon must be included:</p>
+                        <p class="text-gray-700 mb-4">However, if the function has a body, the colon must be included:
+                        </p>
                         <pre class="mb-4"><code>fun main() -> void:
     print("Hello, World!")
 end</code></pre>
 
-                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Example Function with Default Parameters</h3>
+                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Example Function with Default
+                            Parameters</h3>
                         <p class="text-gray-700 mb-4">Functions can have default parameter values:</p>
                         <pre class="mb-4"><code>public static final fun name(arg1, arg2: int, arg3 = 10, arg4: int = 10) -> int:
     return 0
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Calling Functions</h3>
-                        <p class="text-gray-700 mb-4">To call a function, use the function name followed by parentheses and any required arguments:</p>
+                        <p class="text-gray-700 mb-4">To call a function, use the function name followed by parentheses
+                            and any required arguments:</p>
                         <pre class="mb-4"><code>result: int = add(5, 10)</code></pre>
-                        <p class="text-gray-700 mb-4">To call a function with a named parameter, use the parameter name followed by a <code>=</code> and the value:</p>
+                        <p class="text-gray-700 mb-4">To call a function with a named parameter, use the parameter name
+                            followed by a <code>=</code> and the value:</p>
                         <pre><code>result: int = add(b = 10, a = 5)</code></pre>
                     </section>
 
@@ -357,7 +448,8 @@ end</code></pre>
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Loops</h2>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">For Loop</h3>
-                        <p class="text-gray-700 mb-4">Lucia provides a <code>for</code> loop for iterating over lists. A valid range must be enclosed in parentheses:</p>
+                        <p class="text-gray-700 mb-4">Lucia provides a <code>for</code> loop for iterating over lists. A
+                            valid range must be enclosed in parentheses:</p>
                         <pre class="mb-4"><code>for (i in [1...10]):
     print(i)  // Output: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 end</code></pre>
@@ -366,8 +458,11 @@ end</code></pre>
                         <p class="text-gray-700 mb-4">Lucia allows pattern-based list generation inside ranges:</p>
                         <pre class="mb-4"><code>[1, 3, 5...101]     // Generates: [1, 3, 5, 7, ..., 101]
 [0, 2, 4, 6...100]  // Generates: [0, 2, 4, 6, ..., 100]</code></pre>
-                        <p class="text-gray-700 mb-4">If the pattern is not recognized, a <code>ListPatternRecognitionWarning</code> is raised, and the list remains unchanged:</p>
-                        <pre class="mb-4"><code>[1, 2, 6...14]      // Warning: Unrecognized pattern, returns [1, 2, 6, 14]</code></pre>
+                        <p class="text-gray-700 mb-4">If the pattern is not recognized, a
+                            <code>ListPatternRecognitionWarning</code> is raised, and the list remains unchanged:
+                        </p>
+                        <pre
+                            class="mb-4"><code>[1, 2, 6...14]      // Warning: Unrecognized pattern, returns [1, 2, 6, 14]</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">While Loop</h3>
                         <p class="text-gray-700 mb-4">Lucia also supports a <code>while</code> loop:</p>
@@ -379,10 +474,13 @@ end</code></pre>
 
                     <section id="error-handling" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Error Handling</h2>
-                        <p class="text-gray-700 mb-4">Lucia handles errors using <code>try</code> and <code>catch</code> blocks. Functions can throw errors using the <code>throw</code> keyword, and you can specify an error type if needed.</p>
+                        <p class="text-gray-700 mb-4">Lucia handles errors using <code>try</code> and <code>catch</code>
+                            blocks. Functions can throw errors using the <code>throw</code> keyword, and you can specify
+                            an error type if needed.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Function with Error Throwing</h3>
-                        <p class="text-gray-700 mb-4">In Lucia, errors can be thrown using <code>throw</code> and caught with <code>try</code> and <code>catch</code>:</p>
+                        <p class="text-gray-700 mb-4">In Lucia, errors can be thrown using <code>throw</code> and caught
+                            with <code>try</code> and <code>catch</code>:</p>
                         <pre class="mb-4"><code>fun divide(a: int, b: int) -> int:
     if (b == 0):
         throw "Cannot divide by zero!" from ZeroDivisionError
@@ -391,34 +489,42 @@ end</code></pre>
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Try and Catch</h3>
-                        <p class="text-gray-700 mb-4">The <code>try</code> block is used to attempt the operation that might throw an error, and the <code>catch</code> block handles the error:</p>
+                        <p class="text-gray-700 mb-4">The <code>try</code> block is used to attempt the operation that
+                            might throw an error, and the <code>catch</code> block handles the error:</p>
                         <pre class="mb-4"><code>try:
     result = divide(10, 0)
 end catch (e):
     print("Error: ", e)
 end</code></pre>
-                        <p class="text-gray-700 mb-4">Also, you don't need to use the <code>catch</code> block if you don't want to handle the error:</p>
+                        <p class="text-gray-700 mb-4">Also, you don't need to use the <code>catch</code> block if you
+                            don't want to handle the error:</p>
                         <pre class="mb-4"><code>try:
     result = divide(10, 0)
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Default Error Type</h3>
-                        <p class="text-gray-700 mb-4">If no specific error type is mentioned, Lucia will raise an error from <code>LuciaException</code> by default:</p>
+                        <p class="text-gray-700 mb-4">If no specific error type is mentioned, Lucia will raise an error
+                            from <code>LuciaException</code> by default:</p>
                         <pre class="mb-4"><code>fun divide(a: int, b: int) -> int:
     if (b == 0):
         throw "Cannot divide by zero!"
     end
     return a / b
 end</code></pre>
-                        <p class="text-gray-700 mb-4">In the example above, if <code>throw</code> is used without a specified error type, the system will raise a <code>LuciaException</code> by default.</p>
+                        <p class="text-gray-700 mb-4">In the example above, if <code>throw</code> is used without a
+                            specified error type, the system will raise a <code>LuciaException</code> by default.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Defining a new Exception</h3>
-                        <p class="text-gray-700 mb-4">You can define a new exception type by using the <code>Exception</code> keyword:</p>
+                        <p class="text-gray-700 mb-4">You can define a new exception type by using the
+                            <code>Exception</code> keyword:
+                        </p>
                         <pre class="mb-4"><code>Exception CustomError
 throw "Error message" from CustomError</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Defining a new Warning</h3>
-                        <p class="text-gray-700 mb-4">You can define a new warning type by using the <code>Warning</code> keyword:</p>
+                        <p class="text-gray-700 mb-4">You can define a new warning type by using the
+                            <code>Warning</code> keyword:
+                        </p>
                         <pre><code>Warning CustomWarning
 throw "Warning message" from CustomWarning</code></pre>
                     </section>
@@ -437,7 +543,8 @@ spanning multiple lines.
 */</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">In-line Comment</h3>
-                        <p class="text-gray-700 mb-4">The in-line comment is used to add comments inside the code. It's defined by <code><#</code> and <code>#></code>:</p>
+                        <p class="text-gray-700 mb-4">The in-line comment is used to add comments inside the code. It's
+                            defined by <code><#</code> and <code>#></code>:</p>
                         <pre><code>print("Hello world" <# This is an in-line comment #>)</code></pre>
                     </section>
 
@@ -458,18 +565,23 @@ print("Hello, ", name, "!")  // Output: Hello, [name]!</code></pre>
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Other Statements</h2>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Import</h3>
-                        <p class="text-gray-700 mb-4">Lucia allows flexible importing of modules. The <code>import</code> statement can use modifiers such as <code>as</code> and <code>from</code>, and they can appear in any order or be omitted entirely:</p>
+                        <p class="text-gray-700 mb-4">Lucia allows flexible importing of modules. The
+                            <code>import</code> statement can use modifiers such as <code>as</code> and
+                            <code>from</code>, and they can appear in any order or be omitted entirely:
+                        </p>
                         <pre class="mb-4"><code>import math                 // imports math module
 import math as m            // imports math module and renames it as 'm'
 import math from "math/"    // imports math from the specified directory</code></pre>
-                        <p class="text-gray-700 mb-4">The modifiers <code>as</code> and <code>from</code> can be stacked in any order or omitted:</p>
+                        <p class="text-gray-700 mb-4">The modifiers <code>as</code> and <code>from</code> can be stacked
+                            in any order or omitted:</p>
                         <pre class="mb-4"><code>import math
 import math as m
 import math from "math/"
 import math from "math/" as m</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">With</h3>
-                        <p class="text-gray-700 mb-4">The <code>with</code> statement is used for context management:</p>
+                        <p class="text-gray-700 mb-4">The <code>with</code> statement is used for context management:
+                        </p>
                         <pre class="mb-4"><code>with (TestContext()) as tc:
 end</code></pre>
                         <pre class="mb-4"><code>with (File()) as f:
@@ -477,10 +589,12 @@ end</code></pre>
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Forget</h3>
-                        <p class="text-gray-700 mb-4">The <code>forget</code> statement removes a variable from memory:</p>
+                        <p class="text-gray-700 mb-4">The <code>forget</code> statement removes a variable from memory:
+                        </p>
                         <pre class="mb-4"><code>i: int = 10
 forget i</code></pre>
-                        <p class="text-gray-700 mb-4">After using <code>forget</code>, the variable <code>i</code> is no longer available:</p>
+                        <p class="text-gray-700 mb-4">After using <code>forget</code>, the variable <code>i</code> is no
+                            longer available:</p>
                         <pre><code>i: any = "str"</code></pre>
                     </section>
 
@@ -488,7 +602,8 @@ forget i</code></pre>
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Objects</h2>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Object Declaration</h3>
-                        <p class="text-gray-700 mb-4">In Lucia, objects can be declared using the <code>object</code> keyword. Here's an example:</p>
+                        <p class="text-gray-700 mb-4">In Lucia, objects can be declared using the <code>object</code>
+                            keyword. Here's an example:</p>
                         <pre class="mb-4"><code>object O:
     init():
         i: int = 10
@@ -500,46 +615,65 @@ forget i</code></pre>
 end</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Object Usage</h3>
-                        <p class="text-gray-700 mb-4">Once declared, you can create an instance of an object and call its methods:</p>
+                        <p class="text-gray-700 mb-4">Once declared, you can create an instance of an object and call
+                            its methods:</p>
                         <pre class="mb-4"><code>o = O()
 o.main()</code></pre>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Property</h3>
-                        <p class="text-gray-700 mb-4">A property is any variable, function, or object that is called inside another. For example, <code>math.pi</code> is a variable property of the <code>math</code> module.</p>
+                        <p class="text-gray-700 mb-4">A property is any variable, function, or object that is called
+                            inside another. For example, <code>math.pi</code> is a variable property of the
+                            <code>math</code> module.
+                        </p>
                     </section>
 
                     <section id="predefs" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Predefs</h2>
-                        <p class="text-gray-700 mb-4">Predefs are special commands in Lucia that allow you to modify or define certain tokens before they are sent to the interpreter. They are processed during the pre-interpretation phase of your code. All predefs start with the # symbol.</p>
+                        <p class="text-gray-700 mb-4">Predefs are special commands in Lucia that allow you to modify or
+                            define certain tokens before they are sent to the interpreter. They are processed during the
+                            pre-interpretation phase of your code. All predefs start with the # symbol.</p>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Predef Types</h3>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">1. <code>#alias</code></h4>
-                        <p class="text-gray-700 mb-4">The <code>#alias</code> predef allows you to create an alias, which means defining the first argument to be equivalent to the second argument.</p>
+                        <p class="text-gray-700 mb-4">The <code>#alias</code> predef allows you to create an alias,
+                            which means defining the first argument to be equivalent to the second argument.</p>
                         <p class="text-gray-700 mb-4"><em>Example:</em></p>
                         <pre class="mb-4"><code>#alias true -> false</code></pre>
-                        <p class="text-gray-700 mb-4">This command makes <code>true</code> behave as <code>false</code> throughout the code. After this alias, any reference to <code>true</code> will be treated as <code>false</code>.</p>
+                        <p class="text-gray-700 mb-4">This command makes <code>true</code> behave as <code>false</code>
+                            throughout the code. After this alias, any reference to <code>true</code> will be treated as
+                            <code>false</code>.
+                        </p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">2. <code>#del</code></h4>
-                        <p class="text-gray-700 mb-4">The <code>#del</code> predef removes an alias that has been previously defined with <code>#alias</code>. It restores the original meaning of the token.</p>
+                        <p class="text-gray-700 mb-4">The <code>#del</code> predef removes an alias that has been
+                            previously defined with <code>#alias</code>. It restores the original meaning of the token.
+                        </p>
                         <p class="text-gray-700 mb-4"><em>Example:</em></p>
                         <pre class="mb-4"><code>#del true</code></pre>
-                        <p class="text-gray-700 mb-4">This command removes the alias for <code>true</code>, making it behave as it originally did, i.e., <code>true</code> again.</p>
+                        <p class="text-gray-700 mb-4">This command removes the alias for <code>true</code>, making it
+                            behave as it originally did, i.e., <code>true</code> again.</p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">3. <code>#config</code></h4>
-                        <p class="text-gray-700 mb-4">The <code>#config</code> predef allows you to modify the configuration of the interpreter. It can be used to set various options or preferences.</p>
+                        <p class="text-gray-700 mb-4">The <code>#config</code> predef allows you to modify the
+                            configuration of the interpreter. It can be used to set various options or preferences.</p>
                         <p class="text-gray-700 mb-4"><em>Example:</em></p>
                         <pre class="mb-4"><code>#config debug = true</code></pre>
                         <p class="text-gray-700 mb-4">Can be reset to default by:</p>
                         <pre class="mb-4"><code>#config debug reset</code></pre>
-                        <p class="text-gray-700 mb-4">This command sets the debug mode to true, enabling additional debugging features in the interpreter. It's the same as using the <code>config.json</code> file.</p>
+                        <p class="text-gray-700 mb-4">This command sets the debug mode to true, enabling additional
+                            debugging features in the interpreter. It's the same as using the <code>config.json</code>
+                            file.</p>
 
-                        <p class="text-gray-700 mb-4">You can use predefs to modify the behavior of built-in tokens and tailor the language to your specific needs before the interpreter executes your code.</p>
+                        <p class="text-gray-700 mb-4">You can use predefs to modify the behavior of built-in tokens and
+                            tailor the language to your specific needs before the interpreter executes your code.</p>
                     </section>
 
                     <section id="code-blocks" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Code Blocks</h2>
-                        <p class="text-gray-700 mb-4">Lucia supports <strong>code blocks</strong>, which allow you to execute code written in other languages directly within Lucia scripts. Supported languages include:</p>
+                        <p class="text-gray-700 mb-4">Lucia supports <strong>code blocks</strong>, which allow you to
+                            execute code written in other languages directly within Lucia scripts. Supported languages
+                            include:</p>
                         <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-4">
                             <li><strong>C</strong></li>
                             <li><strong>ASM</strong></li>
@@ -549,14 +683,18 @@ o.main()</code></pre>
                         <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
                             <div class="flex">
                                 <div class="flex-shrink-0">
-                                    <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                                            clip-rule="evenodd" />
                                     </svg>
                                 </div>
                                 <div class="ml-3">
                                     <p class="text-sm text-yellow-700">
                                         <strong>Configuration Requirement</strong><br>
-                                        Code blocks require the <code>execute_code_blocks</code> option to be set to <code>true</code> for your language in your <code>config.json</code> file:
+                                        Code blocks require the <code>execute_code_blocks</code> option to be set to
+                                        <code>true</code> for your language in your <code>config.json</code> file:
                                     </p>
                                     <pre class="mt-2"><code>{
     ...
@@ -572,7 +710,9 @@ o.main()</code></pre>
                         </div>
 
                         <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Syntax</h3>
-                        <p class="text-gray-700 mb-4">Code blocks are written using a language prefix followed by an <code>end</code> keyword to mark the end of the block.</p>
+                        <p class="text-gray-700 mb-4">Code blocks are written using a language prefix followed by an
+                            <code>end</code> keyword to mark the end of the block.
+                        </p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">C Example</h4>
                         <pre class="mb-4"><code>C:
@@ -595,8 +735,11 @@ end</code></pre>
     print("Hello, World!")
 end</code></pre>
 
-                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Exporting Variables from C Blocks</h3>
-                        <p class="text-gray-700 mb-4">To retrieve values from C code, use the <strong>export functions</strong> provided by the <code>export.h</code> library. This library is automatically included when executing C code blocks.</p>
+                        <h3 class="text-xl font-semibold text-purple-800 mt-6 mb-3">Exporting Variables from C Blocks
+                        </h3>
+                        <p class="text-gray-700 mb-4">To retrieve values from C code, use the <strong>export
+                                functions</strong> provided by the <code>export.h</code> library. This library is
+                            automatically included when executing C code blocks.</p>
 
                         <h4 class="text-lg font-medium text-purple-700 mt-4 mb-2">Example: Exporting an Integer</h4>
                         <pre class="mb-4"><code>C:
@@ -616,46 +759,77 @@ print(a)  // Output: 10</code></pre>
                             <table class="min-w-full divide-y divide-gray-200">
                                 <thead class="bg-gray-50">
                                     <tr>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Function</th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                                        <th scope="col"
+                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Function</th>
+                                        <th scope="col"
+                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Description</th>
                                     </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_int(name: str, value: int)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export an integer variable.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_int(name: str, value: int)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export an integer
+                                            variable.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_float(name: str, value: float)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a float variable.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_float(name: str, value: float)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a float
+                                            variable.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_double(name: str, value: double)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a double variable.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_double(name: str, value: double)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a double
+                                            variable.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_str(name: str, value: str)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a string variable.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_str(name: str, value: str)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a string
+                                            variable.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_bool(name: str, value: bool)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a boolean variable.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_bool(name: str, value: bool)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a boolean
+                                            variable.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_list(...)</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a list.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_list(...)</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a list.
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_map(...)</code></td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_map(...)</code>
+                                        </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Export a map.</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_flush()</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Save exports to <code>export.json</code>.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_flush()</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Save exports to
+                                            <code>export.json</code>.
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900"><code>export_clear()</code></td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Clear all previously exported data.</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
+                                            <code>export_clear()</code>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Clear all
+                                            previously exported data.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -664,14 +838,21 @@ print(a)  // Output: 10</code></pre>
 
                     <section id="conclusion" class="mb-12">
                         <h2 class="text-2xl font-bold text-purple-900 mb-4">Conclusion</h2>
-                        <p class="text-gray-700 mb-4">Lucia is a straightforward language designed for ease of use and flexibility. You've covered essential topics like variable declaration, control flow, functions, error handling, and objects. The syntax promotes clarity, and the use of blocks and indentation improves code organization.</p>
-                        <p class="text-gray-700 mb-4">To move forward, continue practicing with more complex projects, experiment with its features, and explore how to structure programs using Lucia's modular capabilities.</p>
+                        <p class="text-gray-700 mb-4">Lucia is a straightforward language designed for ease of use and
+                            flexibility. You've covered essential topics like variable declaration, control flow,
+                            functions, error handling, and objects. The syntax promotes clarity, and the use of blocks
+                            and indentation improves code organization.</p>
+                        <p class="text-gray-700 mb-4">To move forward, continue practicing with more complex projects,
+                            experiment with its features, and explore how to structure programs using Lucia's modular
+                            capabilities.</p>
                         <p class="text-gray-700">Happy coding with Lucia.</p>
                     </section>
 
                     <div class="flex justify-center mt-8">
                         <div class="bg-purple-50 border border-purple-200 rounded-xl px-6 py-4 shadow-md">
-                            <a href="https://github.com/SirPigari/lucia/blob/main/env/Docs/language-syntax.md" target="_blank" class="text-purple-800 hover:text-purple-900 text-xl font-medium flex items-center space-x-2">
+                            <a href="https://github.com/SirPigari/lucia/blob/main/env/Docs/language-syntax.md"
+                                target="_blank"
+                                class="text-purple-800 hover:text-purple-900 text-xl font-medium flex items-center space-x-2">
                                 <span>Full documentation</span>
                                 <i class="fab fa-github"></i>
                             </a>
@@ -689,23 +870,46 @@ print(a)  // Output: 10</code></pre>
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lucia</h3>
-                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease of use.</p>
+                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease
+                        of use.</p>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
-                        <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a></li>
-                        <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
-                        <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
-                    </ul>
+                <div class="flex space-x-12 md:space-x-24">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
+                            <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a>
+                            </li>
+                            <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
+                            <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 invisible">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about-rust.html" class="text-purple-200 hover:text-white">About Rust</a></li>
+                            <li><a href="license.html" class="text-purple-200 hover:text-white">License</a></li>
+                            <li><a target="_blank" ,
+                                    href="https://github.com/SirPigari/lucia/blob/main/env/Docs/versioning.md"
+                                    class="text-purple-200 hover:text-white">Versioning</a></li>
+                            <li><a href="https://github.com/SirPigari/lucia-rust" target="_blank"
+                                    class="text-purple-200 hover:text-white">Rust
+                                    Repo</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div>
                     <h3 class="text-xl font-bold mb-4">Community</h3>
                     <div class="flex space-x-4">
-                        <a href="https://github.com/SirPigari/lucia" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
-                        <a href="https://reddit.com/u/SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
-                        <a href="https://www.youtube.com/@SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/SirPigari/lucia" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://reddit.com/u/SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.youtube.com/@SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -748,7 +952,7 @@ print(a)  // Output: 10</code></pre>
             });
         });
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const sections = document.querySelectorAll('section[id]');
             let currentSection = '';
 
@@ -854,7 +1058,7 @@ print(a)  // Output: 10</code></pre>
             body.style.overflow = 'hidden'; // Disable body scroll
         });
 
-                document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             const sidebar = document.getElementById('mobile-sidebar');
             const overlay = document.getElementById('sidebar-overlay');
 
@@ -884,4 +1088,5 @@ print(a)  // Output: 10</code></pre>
 
     </script>
 </body>
+
 </html>

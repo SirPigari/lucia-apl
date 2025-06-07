@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download the Lucia programming language. Follow easy steps to install via Git or an official installer.">
+    <meta name="description"
+        content="Download the Lucia programming language. Follow easy steps to install via Git or an official installer.">
     <meta property="og:title" content="Lucia Programming Language - Download">
     <meta property="og:description" content="Install Lucia easily via Git or GitHub installer.">
     <meta property="og:type" content="website">
@@ -26,18 +28,25 @@
         body {
             overflow-x: hidden;
         }
+
         @media (max-width: 768px) {
             pre {
-                margin-left: -12% !important; /* Ensures it moves 20px to the left on mobile as well */
-                margin-right: 20% !important; /* Ensures it moves 20px to the left on mobile as well */
-                white-space: pre-wrap; /* Allows text to wrap */
-                word-wrap: break-word; /* Prevents long words from overflowing */
-                overflow-wrap: break-word; /* Breaks words inside <pre> to prevent overflow */
+                margin-left: -12% !important;
+                /* Ensures it moves 20px to the left on mobile as well */
+                margin-right: 20% !important;
+                /* Ensures it moves 20px to the left on mobile as well */
+                white-space: pre-wrap;
+                /* Allows text to wrap */
+                word-wrap: break-word;
+                /* Prevents long words from overflowing */
+                overflow-wrap: break-word;
+                /* Breaks words inside <pre> to prevent overflow */
             }
         }
     </style>
     <link rel="icon" type="image/png" href="../assets/logo_text.png">
 </head>
+
 <body class="bg-gray-50">
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 py-6">
@@ -49,10 +58,14 @@
                     <h1 class="text-2xl font-bold text-purple-900">Lucia</h1>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
-                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600" href="download.html">Download</a>
-                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="about.html">About</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="documentation.html">Documentation</a>
+                    <a class="tab-btn active px-3 py-2 font-medium text-purple-900 border-b-2 border-purple-600"
+                        href="download.html">Download</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="examples.html">Examples</a>
                 </nav>
                 <button class="md:hidden text-purple-900" id="mobile-menu-btn">
                     <i class="fas fa-bars text-2xl"></i>
@@ -62,10 +75,14 @@
 
         <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="about.html">About</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="documentation.html">Documentation</a>
-                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded" href="download.html">Download</a>
-                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900" href="examples.html">Examples</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="about.html">About</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="documentation.html">Documentation</a>
+                <a class="tab-btn active text-left px-3 py-2 font-medium text-purple-900 bg-purple-50 rounded"
+                    href="download.html">Download</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="examples.html">Examples</a>
             </div>
         </div>
     </header>
@@ -74,7 +91,8 @@
         <div id="download" class="tab-content active">
             <section class="mb-12">
                 <h2 class="text-2xl font-bold text-purple-900 mb-6">Install Lucia</h2>
-                <p class="text-gray-700 mb-6">You can install the Lucia programming language using one of two methods:</p>
+                <p class="text-gray-700 mb-6">You can install the Lucia programming language using one of two methods:
+                </p>
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
                     <div class="bg-white p-6 rounded-xl shadow-sm">
@@ -83,7 +101,8 @@
                         <ol class="list-decimal pl-6 space-y-2 text-gray-700 mb-4">
                             <li>Open a terminal window.</li>
                             <li>Clone the Lucia repository:
-                                <pre class="mt-2"><code>git clone https://github.com/SirPigari/lucia.git lucia</code></pre>
+                                <pre
+                                    class="mt-2"><code>git clone https://github.com/SirPigari/lucia.git lucia</code></pre>
                             </li>
                             <li>Navigate to the directory:
                                 <pre class="mt-2"><code>cd lucia</code></pre>
@@ -99,9 +118,11 @@
 
                     <div class="bg-white p-6 rounded-xl shadow-sm">
                         <h3 class="text-xl font-semibold text-purple-800 mb-4">Method 2: Installer from GitHub</h3>
-                        <p class="text-gray-700 mb-4">You can also install Lucia using an installer provided on GitHub:</p>
+                        <p class="text-gray-700 mb-4">You can also install Lucia using an installer provided on GitHub:
+                        </p>
                         <ol class="list-decimal pl-6 space-y-2 text-gray-700 mb-4">
-                            <li>Go to the <a href="https://github.com/SirPigari/lucia" class="text-purple-600 hover:underline">Lucia GitHub repository</a>.</li>
+                            <li>Go to the <a href="https://github.com/SirPigari/lucia"
+                                    class="text-purple-600 hover:underline">Lucia GitHub repository</a>.</li>
                             <li>Download the latest installer for your operating system (Windows, macOS, or Linux).</li>
                             <li>Run the installer and follow the on-screen instructions.</li>
                             <li>Verify installation:
@@ -112,10 +133,13 @@
                 </div>
 
                 <h3 class="text-xl font-semibold text-purple-800 mb-3">Post-Installation Setup</h3>
-                <p class="text-gray-700 mb-6">After installing Lucia, make sure you have the necessary dependencies or environment variables set up. You may need to add Lucia to your system's PATH variable if the installer did not do this automatically.</p>
+                <p class="text-gray-700 mb-6">After installing Lucia, make sure you have the necessary dependencies or
+                    environment variables set up. You may need to add Lucia to your system's PATH variable if the
+                    installer did not do this automatically.</p>
 
                 <h3 class="text-xl font-semibold text-purple-800 mb-3">Configuration Guide</h3>
-                <p class="text-gray-700 mb-4">The <code>config.json</code> file contains various configurable options that control the behavior and appearance of the Lucia programming environment.</p>
+                <p class="text-gray-700 mb-4">The <code>config.json</code> file contains various configurable options
+                    that control the behavior and appearance of the Lucia programming environment.</p>
 
                 <div class="rounded-xl overflow-hidden shadow-sm border border-gray-300">
                     <div class="bg-purple-800 px-4 py-2 flex items-center">
@@ -170,23 +194,46 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lucia</h3>
-                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease of use.</p>
+                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease
+                        of use.</p>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
-                        <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a></li>
-                        <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
-                        <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
-                    </ul>
+                <div class="flex space-x-12 md:space-x-24">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
+                            <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a>
+                            </li>
+                            <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
+                            <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 invisible">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about-rust.html" class="text-purple-200 hover:text-white">About Rust</a></li>
+                            <li><a href="license.html" class="text-purple-200 hover:text-white">License</a></li>
+                            <li><a target="_blank" ,
+                                    href="https://github.com/SirPigari/lucia/blob/main/env/Docs/versioning.md"
+                                    class="text-purple-200 hover:text-white">Versioning</a></li>
+                            <li><a href="https://github.com/SirPigari/lucia-rust" target="_blank"
+                                    class="text-purple-200 hover:text-white">Rust
+                                    Repo</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div>
                     <h3 class="text-xl font-bold mb-4">Community</h3>
                     <div class="flex space-x-4">
-                        <a href="https://github.com/SirPigari/lucia" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
-                        <a href="https://reddit.com/u/SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
-                        <a href="https://www.youtube.com/@SirPigari" target="_blank" class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/SirPigari/lucia" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://reddit.com/u/SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.youtube.com/@SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -198,4 +245,5 @@
 
     <script src="../static/script.js"></script>
 </body>
+
 </html>
