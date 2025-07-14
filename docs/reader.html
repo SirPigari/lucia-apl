@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucia Docs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Consolas, monospace, monospace;
+            background: #fff;
+            color: #111;
+        }
+
+        body.enable-transitions {
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body.dark {
+            background: #121212;
+            color: #ddd;
+        }
+
+        #page-header {
+            background: #7356a5;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1em;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body.dark #page-header {
+            background: #4C3673;
+        }
+
+        #main-layout {
+            flex: 1;
+            display: flex;
+            overflow: visible;
+        }
+
+        #sidebar {
+            width: 250px;
+            overflow-y: auto;
+            border-right: 1px solid #ccc;
+            background: #f7f7f7;
+            padding: 1em;
+            box-sizing: border-box;
+            transition: background 0.3s, color 0.3s;
+            position: sticky;
+            top: 3.5rem;
+            height: calc(100vh - 3rem);
+            flex-shrink: 0;
+            z-index: 500;
+        }
+
+        body.dark #sidebar {
+            background: #1e1e1e;
+            border-color: #444;
+        }
+
+        #content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1em 2em;
+            max-width: 900px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 0.5em;
+            margin-left: 0;
+        }
+
+        .toc-list li {
+            margin: 0.2em 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .toc-list li>ul {
+            margin-left: 1em;
+            border-left: 1px solid #ccc;
+            padding-left: 0.5em;
+            display: none;
+        }
+
+        body.dark .toc-list li>ul {
+            border-color: #555;
+        }
+
+        .toc-list li.expanded>ul {
+            display: block;
+        }
+
+        .toc-toggle {
+            margin-right: 0.3em;
+            color: #007acc;
+            user-select: none;
+        }
+
+        body.dark .toc-toggle {
+            color: #0a84ff;
+        }
+
+        .toc-link {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .toc-link:hover {
+            text-decoration: underline;
+        }
+
+        #content h1,
+        #content h2,
+        #content h3 {
+            scroll-margin-top: 80px;
+        }
+
+        #content a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        body.dark #content a {
+            color: #0a84ff;
+        }
+
+        #content a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background: #eee;
+            padding: 1em;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+
+        body.dark pre {
+            background: #222;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        #dark-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+            user-select: none;
+        }
+
+        #dark-toggle:focus {
+            outline: 2px solid white;
+        }
+
+        footer {
+            background: #7356a5;
+            color: white;
+            padding: 1em 2em;
+            font-size: 0.9rem;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-shrink: 0;
+        }
+
+        body.dark footer {
+            background: #4C3673;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="page-header">
+        <span id="header-title">Loading...</span>
+        <button id="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-fill" id="dark-icon"></i><span> Dark Mode</span>
+        </button>
+    </header>
+
+    <div id="main-layout">
+        <nav id="sidebar">
+            <h3>Contents</h3>
+            <ul id="toc" class="toc-list"></ul>
+        </nav>
+        <main id="content">Loading content...</main>
+    </div>
+
+    <footer>
+        <a href="https://github.com/SirPigari/lucia-rust" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> Lucia Rust
+        </a>
+        <a href="https://github.com/SirPigari/lym" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> Lym - package manager
+        </a>
+        <a href="https://github.com/SirPigari/lucia" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> Lucia Python
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const headerTitle = document.getElementById('header-title');
+        const contentEl = document.getElementById('content');
+        const tocEl = document.getElementById('toc');
+        const darkToggleBtn = document.getElementById('dark-toggle');
+        const darkIcon = document.getElementById('dark-icon');
+
+        function getFileParam() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('file');
+        }
+
+        async function fetchMD(url) {
+            try {
+                const res = await fetch(url);
+                if (!res.ok) return null;
+                return await res.text();
+            } catch {
+                return null;
+            }
+        }
+
+        function buildTOC() {
+            tocEl.innerHTML = '';
+            const headers = contentEl.querySelectorAll('h1, h2, h3');
+            if (!headers.length) {
+                tocEl.textContent = 'No headers found';
+                return;
+            }
+
+            let currentH1 = null;
+            let currentH2 = null;
+
+            for (const h of headers) {
+                const text = h.textContent;
+                const id = h.id || text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+                h.id = id;
+
+                const link = document.createElement('a');
+                link.href = `#${id}`;
+                link.textContent = text;
+                link.className = 'toc-link';
+
+                let li = document.createElement('li');
+                li.appendChild(link);
+
+                if (h.tagName === 'H1') {
+                    currentH1 = document.createElement('li');
+                    currentH1.className = 'toc-item toc-h1';
+
+                    const toggleIcon = document.createElement('span');
+                    toggleIcon.className = 'toc-toggle';
+                    toggleIcon.innerHTML = '<i class="bi bi-caret-right-fill"></i>';
+                    toggleIcon.onclick = e => {
+                        e.stopPropagation();
+                        currentH1.classList.toggle('expanded');
+                        const icon = toggleIcon.querySelector('i');
+                        icon.className = currentH1.classList.contains('expanded') ? 'bi bi-caret-down-fill' : 'bi bi-caret-right-fill';
+                    };
+                    currentH1.prepend(toggleIcon);
+
+                    const ul = document.createElement('ul');
+                    ul.className = 'toc-list';
+                    currentH1.appendChild(ul);
+                    tocEl.appendChild(currentH1);
+                    currentH2 = null;
+                } else if (h.tagName === 'H2') {
+                    if (!currentH1) {
+                        tocEl.appendChild(li);
+                        currentH2 = null;
+                        continue;
+                    }
+                    const ul = currentH1.querySelector('ul');
+                    currentH2 = document.createElement('li');
+                    currentH2.className = 'toc-item toc-h2';
+
+                    const toggleIcon = document.createElement('span');
+                    toggleIcon.className = 'toc-toggle';
+                    toggleIcon.innerHTML = '<i class="bi bi-caret-right-fill"></i>';
+                    toggleIcon.onclick = e => {
+                        e.stopPropagation();
+                        currentH2.classList.toggle('expanded');
+                        const icon = toggleIcon.querySelector('i');
+                        icon.className = currentH2.classList.contains('expanded') ? 'bi bi-caret-down-fill' : 'bi bi-caret-right-fill';
+                    };
+                    currentH2.prepend(toggleIcon);
+
+                    const ul2 = document.createElement('ul');
+                    ul2.className = 'toc-list';
+                    currentH2.appendChild(ul2);
+                    ul.appendChild(currentH2);
+
+                    currentH2.insertAdjacentElement('beforeend', link);
+                } else if (h.tagName === 'H3') {
+                    if (currentH2) {
+                        const ul2 = currentH2.querySelector('ul');
+                        const li3 = document.createElement('li');
+                        li3.className = 'toc-item toc-h3';
+                        li3.appendChild(link);
+                        ul2.appendChild(li3);
+                    } else if (currentH1) {
+                        const ul = currentH1.querySelector('ul');
+                        ul.appendChild(li);
+                    } else {
+                        tocEl.appendChild(li);
+                    }
+                }
+            }
+        }
+
+        function updateDarkModeUI(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark');
+                darkIcon.className = 'bi bi-sun-fill';
+                darkToggleBtn.textContent = ' Light Mode';
+                darkToggleBtn.prepend(darkIcon);
+            } else {
+                document.body.classList.remove('dark');
+                darkIcon.className = 'bi bi-moon-fill';
+                darkToggleBtn.textContent = ' Dark Mode';
+                darkToggleBtn.prepend(darkIcon);
+            }
+        }
+
+        darkToggleBtn.onclick = () => {
+            const isDark = document.body.classList.toggle('dark');
+            localStorage.setItem('dark-mode', isDark ? '1' : '0');
+            updateDarkModeUI(isDark);
+        };
+
+        const isDarkMode = localStorage.getItem('dark-mode') === '1';
+        if (isDarkMode) {
+            document.body.classList.add('dark');
+        }
+        updateDarkModeUI(isDarkMode);
+
+        requestAnimationFrame(() => {
+            document.body.classList.add('enable-transitions');
+        });
+
+        function fixRelativeLinks(baseUrl) {
+            const base = new URL(baseUrl);
+            const selfBase = window.location.pathname;
+
+            document.querySelectorAll('img[src], a[href]').forEach(el => {
+                const isImg = el.tagName.toLowerCase() === 'img';
+                const attr = isImg ? 'src' : 'href';
+                const val = el.getAttribute(attr);
+
+                if (!val) return;
+
+                if (
+                    val.startsWith('http://') ||
+                    val.startsWith('https://') ||
+                    val.startsWith('file://') ||
+                    val.startsWith('//') ||
+                    val.startsWith('#')
+                ) return;
+
+                try {
+                    const abs = new URL(val, base);
+
+                    if (!isImg && abs.pathname.endsWith('.md')) {
+                        const redirectUrl = `${selfBase}?file=${encodeURIComponent(abs.href)}`;
+                        el.setAttribute('href', redirectUrl);
+                    } else if (
+                        !isImg &&
+                        base.hostname === 'raw.githubusercontent.com' &&
+                        !/\.[a-z0-9]+$/i.test(abs.pathname)
+                    ) {
+                        const parts = abs.pathname.split('/').filter(Boolean);
+                        if (parts.length >= 3) {
+                            const [user, repo, branch, ...path] = parts;
+                            const githubUrl = `https://github.com/${user}/${repo}/tree/${branch}/${path.join('/')}`;
+                            el.setAttribute('href', githubUrl);
+                        }
+                    } else {
+                        el.setAttribute(attr, abs.href);
+                    }
+                } catch (_) { }
+            });
+        }
+
+        async function main() {
+            const file = getFileParam();
+            if (!file) {
+                const fallback = 'file:///C:/Users/sirpigari/Desktop/Projects/Rust/test/test.html?file=https://raw.githubusercontent.com/SirPigari/lucia-rust/main/README.md';
+                window.location.href = fallback;
+                return;
+            }
+
+            headerTitle.textContent = `Loading ${file}...`;
+            const md = await fetchMD(file);
+            if (!md) {
+                headerTitle.textContent = 'Failed to load file';
+                contentEl.textContent = `Could not fetch "${file}"`;
+                return;
+            }
+
+            headerTitle.textContent = `Lucia Docs - ${file.split('/').pop()}`;
+
+            marked.setOptions({
+                gfm: true,
+                breaks: false,
+                smartLists: true,
+                smartypants: false,
+                headerIds: true,
+                mangle: false,
+                sanitize: false,
+            });
+
+            contentEl.innerHTML = marked.parse(md);
+
+            buildTOC();
+            fixRelativeLinks(file);
+        }
+
+        main();
+    </script>
+</body>
+
+</html>
