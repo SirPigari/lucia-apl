@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Lucia is converting its entire codebase to Rust for blazing speed and modern safety." />
+    <meta property="og:title" content="About Rust Conversion - Lucia Programming Language" />
+    <meta property="og:description"
+        content="Lucia is converting its codebase to Rust — faster, safer, and totally femboy-approved!" />
+    <meta property="og:type" content="website" />
+    <title>About Rust Conversion - Lucia Programming Language</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="icon" type="image/png" href="../assets/logo_text.png" />
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <img src="../assets/logo_notext.png" alt="Lucia Logo" class="w-8 h-8" />
+                    </div>
+                    <h1 class="text-2xl font-bold text-purple-900">Lucia</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="about.html">About</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="documentation.html">Documentation</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="download.html">Download</a>
+                    <a class="tab-btn px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                        href="examples.html">Examples</a>
+                </nav>
+                <button class="md:hidden text-purple-900" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="about.html">About</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="documentation.html">Documentation</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="download.html">Download</a>
+                <a class="tab-btn text-left px-3 py-2 font-medium text-gray-600 hover:text-purple-900"
+                    href="examples.html">Examples</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 bg-gradient-to-r from-purple-50 to-white p-8 rounded-xl shadow-sm">
+            <h2 class="text-3xl font-bold text-purple-900 mb-4">Converting to Rust</h2>
+
+            <p class="text-lg text-gray-700 mb-4">
+                Lucia is getting a full makeover! We're in the process of porting the entire codebase to
+                <a href="https://www.rust-lang.org/" target="_blank"
+                    class="font-semibold text-purple-700 hover:underline inline-flex items-center gap-1 translate-y-[3px]">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Original_Ferris.svg" alt="Rust"
+                        class="inline-block w-5 h-5" />
+                    Rust
+                </a>.
+                This means the language will be <span class="font-semibold text-purple-700">blazingly fast</span>,
+                <span class="font-semibold text-purple-700">memory-safe</span>, and easier to maintain and expand!
+            </p>
+
+            <p class="text-lg text-gray-700 mb-4">
+                This major release — <span class="font-semibold text-purple-900">Lucia 2.0.0</span> — is inspired by
+                <a href="https://www.python.org/" target="_blank"
+                    class="italic text-gray-700 hover:underline">Python</a>,
+                <a href="https://www.lua.org/" target="_blank" class="italic text-gray-700 hover:underline">Lua</a>,
+                and even a bit of
+                <a href="https://www.oracle.com/java/" target="_blank"
+                    class="italic text-gray-700 hover:underline">Java</a>~
+            </p>
+
+
+            <ul class="list-disc text-gray-700 pl-6 mb-4 space-y-1">
+                <li>Implemented in Rust for raw speed and modern tooling</li>
+                <li>Cleaner, safer, and more maintainable code</li>
+                <li>Inspired by languages known for clarity and elegance</li>
+            </ul>
+
+            <p class="text-gray-700 mb-4">
+                You can follow progress on our <a href="https://github.com/SirPigari/lucia-rust" target="_blank"
+                    class="text-purple-600 underline">Lucia Rust GitHub repo</a> and track our
+                <a href="https://github.com/SirPigari/lucia-rust/actions/workflows/run-tests-nightly.yml"
+                    target="_blank" class="text-purple-600 underline">test suite status</a>.
+            </p>
+
+            <p class="text-gray-700 font-semibold text-lg">Build Status:</p>
+            <div class="inline-flex flex-col items-start gap-2 mt-2 mb-8 p-3 border border-gray-300 rounded-md w-max">
+                <div class="inline-flex gap-4 items-center">
+                    <a target="_blank" href="https://github.com/SirPigari/lucia-rust/actions/workflows/test-linux.yml"
+                        class="inline-block">
+                        <img src="https://github.com/SirPigari/lucia-rust/actions/workflows/test-linux.yml/badge.svg?branch=main"
+                            alt="Linux" class="h-6" />
+                    </a>
+                    <a target="_blank" href="https://github.com/SirPigari/lucia-rust/actions/workflows/test-macos.yml"
+                        class="inline-block">
+                        <img src="https://github.com/SirPigari/lucia-rust/actions/workflows/test-macos.yml/badge.svg?branch=main"
+                            alt="MacOS" class="h-6" />
+                    </a>
+                    <a target="_blank" href="https://github.com/SirPigari/lucia-rust/actions/workflows/test-windows.yml"
+                        class="inline-block">
+                        <img src="https://github.com/SirPigari/lucia-rust/actions/workflows/test-windows.yml/badge.svg?branch=main"
+                            alt="Windows" class="h-6" />
+                    </a>
+                </div>
+            </div>
+
+
+            <p class="text-gray-700 italic mb-6">
+                and yes... Rust is a <a
+                    href="https://www.reddit.com/r/feminineboys/comments/j91rv7/comment/g8gk0fy/?context=3"
+                    target="_blank" class="text-purple-600 underline">femboy language</a> :3
+            </p>
+        </section>
+
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-purple-900 mb-6">Why Rust?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-900 mb-2">Blazing Performance</h3>
+                    <p class="text-gray-600">
+                        Rust compiles to super fast machine code, making Lucia way faster and smoother.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-900 mb-2">Memory Safety</h3>
+                    <p class="text-gray-600">
+                        Rust's ownership model helps prevent bugs and crashes, keeping your code secure.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-900 mb-2">Productivity</h3>
+                    <p class="text-gray-600">
+                        Rust's tooling and safety allow us to develop faster and ship updates more reliably — which
+                        means a better
+                        language for you!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-purple-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Lucia</h3>
+                    <p class="text-purple-200">A simple, elegant programming language designed for readability and ease
+                        of use.</p>
+                </div>
+                <div class="flex space-x-12 md:space-x-24">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about.html" class="text-purple-200 hover:text-white">About</a></li>
+                            <li><a href="documentation.html" class="text-purple-200 hover:text-white">Documentation</a>
+                            </li>
+                            <li><a href="download.html" class="text-purple-200 hover:text-white">Download</a></li>
+                            <li><a href="examples.html" class="text-purple-200 hover:text-white">Examples</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 invisible">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about-rust.html" class="text-purple-200 hover:text-white">About Rust</a></li>
+                            <li><a href="license.html" class="text-purple-200 hover:text-white">License</a></li>
+                            <li><a target="_blank" ,
+                                    href="https://github.com/SirPigari/lucia/blob/main/env/Docs/versioning.md"
+                                    class="text-purple-200 hover:text-white">Versioning</a></li>
+                            <li><a href="https://github.com/SirPigari/lucia-rust" target="_blank"
+                                    class="text-purple-200 hover:text-white">Rust Repo</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Community</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/SirPigari/lucia" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="https://reddit.com/u/SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-reddit"></i></a>
+                        <a href="https://www.youtube.com/@SirPigari" target="_blank"
+                            class="text-purple-200 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-purple-800 mt-8 pt-6 text-center text-purple-300">
+                <p>&copy; 2025 Lucia Programming Language. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
