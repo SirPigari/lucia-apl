@@ -432,8 +432,10 @@
         async function main() {
             const file = getFileParam();
             if (!file) {
-                const fallback = 'file:///C:/Users/sirpigari/Desktop/Projects/Rust/test/test.html?file=https://raw.githubusercontent.com/SirPigari/lucia-rust/main/README.md';
-                window.location.href = fallback;
+                const defaultFile = 'https://raw.githubusercontent.com/SirPigari/lucia-rust/main/README.md';
+                const currentUrl = new URL(window.location.href);
+                currentUrl.search = `?file=${encodeURIComponent(defaultFile)}`;
+                window.location.href = currentUrl.toString();
                 return;
             }
 
