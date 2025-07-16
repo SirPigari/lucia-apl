@@ -483,6 +483,22 @@
             };
         });
 
+        hljs.registerLanguage('lucia-repl', function (hljs) {
+            return {
+                name: 'lucia-repl',
+                contains: [
+                    {
+                        className: 'meta',
+                        begin: /^>>>/,
+                    },
+                    {
+                        className: 'comment',
+                        begin: /^(Tokens|Statements).*/,
+                    }
+                ]
+            };
+        });
+
         function getFileParam() {
             const params = new URLSearchParams(window.location.search);
             return params.get('file');
